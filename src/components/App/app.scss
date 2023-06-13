@@ -1,0 +1,20 @@
+.app{
+    height: 100vh;
+    overflow-y: scroll;
+    // background: url('../../assets/bg_pink.jpg') center / cover no-repeat;
+}
+
+.content{
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    width: 1040px;
+    column-gap: 40px;
+    &__main{
+        margin: 0 auto;
+    }
+    &__list{
+        padding-top: 50px;
+    }
+}

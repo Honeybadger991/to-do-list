@@ -1,0 +1,48 @@
+.content__add{
+    &-form{
+        height: 40px;
+    }
+    &-input{
+        width: 385px;
+        height: 100%;
+        border: none;
+        font-weight: 500;
+        padding-left: 20px;
+        border-radius: 5px 0px 0px 5px;
+        &:focus{
+            outline: 0;
+            outline-offset: 0;
+        }
+    }
+    &-select{
+        width: 120px;
+        font-weight: 500;
+        height: 100%;
+        border: none;
+        border-left: 5px dotted blue;
+        &:focus{
+            outline: 0;
+            outline-offset: 0;
+        }
+    }
+    &-btn{
+        width: 65px;
+        height: 100%;
+        background-color: blue;
+        color: #fff;
+        border-radius: 0px 5px 5px 0px;
+        &:hover{
+            background-color: #080E73
+        }
+    }
+    &-mark{
+        font-size: 17px;
+        font-weight: 500;
+        color: black;
+    }
+    &-option{
+        font-size: 17px;
+        font-weight: 500;
+        color:black;
+    }
+}

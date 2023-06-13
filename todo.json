@@ -1,0 +1,48 @@
+{
+  "todos": [
+    {
+      "id": "c91lGJTR5iPGOJlX0n7vs",
+      "name": "work hard",
+      "color": "gold",
+      "isEdit": false
+    },
+    {
+      "id": "a2xvpINNWkTH_TbL1UlAa",
+      "name": "test",
+      "color": "green",
+      "isEdit": false
+    },
+    {
+      "id": "R13Phu8OGPG3ql_Abnq4f",
+      "name": "return here later",
+      "color": "red"
+    }
+  ],
+  "filters": [
+    {
+      "id": "blue",
+      "name": "blue",
+      "color": "blue"
+    },
+    {
+      "id": "green",
+      "name": "green",
+      "color": "green"
+    },
+    {
+      "id": "gold",
+      "name": "gold",
+      "color": "gold"
+    },
+    {
+      "id": "red",
+      "name": "red",
+      "color": "red"
+    },
+    {
+      "id": "purple",
+      "name": "purple",
+      "color": "purple"
+    }
+  ]
+}
