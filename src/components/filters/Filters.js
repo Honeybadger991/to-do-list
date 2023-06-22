@@ -8,7 +8,7 @@ import img2 from '../../assets/bg_pink.jpg';
 import img3 from '../../assets/bg_dark.jpg';
 import img4 from '../../assets/bg_orange.jpg'
 
-const Filters = ({setBackground, back}) => {
+const Filters = ({setBackground, back, setModal}) => {
 
     const dispatch = useDispatch();
 
@@ -67,6 +67,7 @@ const Filters = ({setBackground, back}) => {
 
     return (
         <div className="content__filters-wrapper">
+            <span aria-hidden="true" className="close-modal" onClick={() => setModal(false)}>×</span>
             <h5 className="content__filters-subtitle">Filter your tasks</h5>
             <div className="content__filters-top">
                 <ul className="content__filters-list">

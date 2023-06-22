@@ -1,20 +1,56 @@
 .app{
     height: 100vh;
     overflow-y: scroll;
-    // background: url('../../assets/bg_pink.jpg') center / cover no-repeat;
 }
 
 .content{
     margin: 0 auto;
     padding-top: 50px;
     display: grid;
-    grid-template-columns: 700px 300px;
+    grid-template-columns: 60% 30%;
     width: 1040px;
-    column-gap: 40px;
+    column-gap: 10%;
     &__main{
         margin: 0 auto;
+        width: 100%;
     }
     &__list{
         padding-top: 50px;
+    }
+    &__sidepanel{
+        width: 100%;
+    }
+}
+@media(max-width: 1200px){
+    .content{
+        width: 800px;
+    }
+}
+@media(max-width: 992px){
+    .content{
+        width: 680px;
+        grid-template-columns: 63% 34%;
+        column-gap: 3%;
+    }
+}
+@media(max-width: 768px){
+    .content{
+        width: 520px;
+        grid-template-columns: 98%;
+        justify-content: center;
+        &__sidepanel{
+            display: none;
+        }
+    }
+}
+@media(max-width: 576px){
+    .content{
+        padding-top: 30px;
+        width: 380px;
+    }
+}
+@media(max-width: 400px){
+    .content{
+        width: 300px;
     }
 }

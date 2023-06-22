@@ -1,9 +1,10 @@
 .content__add{
     &-form{
         height: 40px;
+        width: 100%;
     }
     &-input{
-        width: 385px;
+        width: 70%;
         height: 100%;
         border: none;
         font-weight: 500;
@@ -15,7 +16,7 @@
         }
     }
     &-select{
-        width: 120px;
+        width: 20%;
         font-weight: 500;
         height: 100%;
         border: none;
@@ -26,7 +27,7 @@
         }
     }
     &-btn{
-        width: 65px;
+        width: 10%;
         height: 100%;
         background-color: blue;
         color: #fff;
@@ -44,5 +45,36 @@
         font-size: 17px;
         font-weight: 500;
         color:black;
+    }
+}
+@media(max-width: 576px){
+    .content__add{
+        &-input{
+            width: 65%;
+        }
+        &-btn{
+            width: 15%;
+        }
+    }
+}
+@media(max-width: 400px){
+    .content__add{
+        &-input{
+            width: 60%;
+        }
+        &-select{
+            width: 25%;
+            font-weight: 300;
+            height: 100%;
+            border: none;
+            border-left: 3px dotted blue;
+            &:focus{
+                outline: 0;
+                outline-offset: 0;
+            }
+        }
+        &-btn{
+            width: 15%;
+        }
     }
 }

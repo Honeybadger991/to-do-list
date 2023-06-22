@@ -3,6 +3,8 @@
         padding: 20px;
         width: 100%;
         background-color: #fff;
+        border-radius: 8px;
+        position: relative;
     }
     &-subtitle{
         text-align: center;
@@ -87,5 +89,18 @@
             background-color: orangered
         }
     }
-    
+}
+.close-modal{
+    font-size: 42px;
+    color: red;
+    position: absolute;
+    top: -9px;
+    right: 1px;
+    display: none;
+}
+
+@media(max-width: 768px){
+    .close-modal{
+        display: block;
+    }
 }

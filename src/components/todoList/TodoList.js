@@ -7,9 +7,10 @@ import { useHttp } from "../../hooks/http.hook";
 import TodoItem from "../todoItem/TodoItem";
 import EditForm from "../editForm/EditForm";
 import { todoDeleted, todoEditing} from "../todoList/todoSlice";
-import './todoList.scss'
+import './todoList.scss';
+import menu from '../../assets/bars-solid.svg'
 
-const TodoList = () => {
+const TodoList = ({setModal}) => {
 
     const dispatch = useDispatch();
     const {request} = useHttp();
@@ -81,8 +82,8 @@ const TodoList = () => {
             <div className="content__list-header">
                 <h1 className="content__list-title">Things to do: </h1>
                 <div className="content__list-counter">{counter}</div>
+                <button onClick={() => setModal(true)} className="content__list-menu"><img src={menu} alt="menu-bars" /></button>
             </div>
-            <div className="content__list-divider"></div>
             <ul className="content__list-list">
                 {elements}
             </ul>

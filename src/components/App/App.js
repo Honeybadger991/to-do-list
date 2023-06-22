@@ -3,13 +3,15 @@ import './app.scss';
 import TodoAddForm from '../addForm/AddForm';
 import TodoList from '../todoList/TodoList';
 import Filters from '../filters/Filters';
+import Modal from '../modal/Modal';
 import img from '../../assets/bg_green.jpg';
 
 
 
 const App = () => {
 
-    const [background, setBackground] = useState()
+    const [background, setBackground] = useState();
+    const [modal, setModal] = useState(false);
 
     useEffect(() => {
         let b = localStorage.getItem('bg') || img;
@@ -22,10 +24,11 @@ const App = () => {
             <div className='content'>
                 <div className='content__main'>
                     <TodoAddForm/>
-                    <TodoList/>
+                    <TodoList modal={modal} setModal={setModal}/>
+                    <Modal modal={modal} setModal={setModal} setBackground={setBackground} back={background}/>
                 </div>
                 <div className='content__sidepanel'>
-                    <Filters setBackground={setBackground} back={background}/>
+                    <Filters setBackground={setBackground} back={background} setModal={setModal}/>
                 </div>
             </div>
         </main>

@@ -46,5 +46,34 @@
             color: #fff;
         }
     }
-
+}
+@media(max-width: 400px){
+    .content__list{
+        &-item{
+            padding: 5px;
+            height: 30px;
+            gap: 10px;
+        }
+        &-circle{
+            height: 15px;
+            width: 15px;
+        }
+        &-text{
+            font-weight: 700;
+            font-size: 16px;
+        }
+        &-edit{
+            height: 20px;
+            width: 20px;
+            border-radius: 10%;
+        }
+        &-close{
+            height: 20px;
+            width: 20px;
+            border-radius: 10%;
+            &-x{
+                font-size: 24px;
+            }
+        }
+    }
 }
